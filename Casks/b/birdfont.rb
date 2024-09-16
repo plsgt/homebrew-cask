@@ -20,8 +20,8 @@ cask "birdfont" do
     end
   end
   on_sonoma :or_newer do
-    version "6.7.1"
-    sha256 "67041c24cd8de2585dc850081006d41e5169c456f3cee1d3d06f78e521378722"
+    version "6.8.1"
+    sha256 "bcd4f1c64ede96f6b1496a9ae8c88a0f7269e66698606ef3ce7d5f798593b325"
 
     livecheck do
       url "https://birdfont.org/purchase.php"
@@ -42,4 +42,8 @@ cask "birdfont" do
     "~/Library/Application Scripts/org.birdfont.birdfont",
     "~/Library/Containers/org.birdfont.birdfont",
   ]
+
+  caveats do
+    requires_rosetta
+  end
 end
